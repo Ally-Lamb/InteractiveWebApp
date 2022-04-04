@@ -1,0 +1,64 @@
+<html>
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/style.css">
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700" rel="stylesheet">
+		<title>Alison Lamb - Javascript Calculator</title>
+	</head>
+	<body>
+		<!--Background Container full page-->
+		<div id="container">
+			<!--Calculator square in center of page-->
+			<div id="calculator">
+				<!--Exit Button-->
+				<button class="close" id="close">
+					<a href="thankYou.html" class="navtext">X</a>
+				</button>
+				
+				<!--Main History and Output boxes for displaying users entered multiplications -->
+				<div id="result">
+					<div id="history">
+						<p id="history-value"></p>
+					</div>
+					<div id="output">
+						<p id="output-value"></p>
+					</div>
+				</div>
+				
+				<!--Keyboard square and its internal cell buttons -->
+				<div id="keyboard">
+					<!--Row 1 (C CE % /)-->
+					<button class="operator" id="clear">C</button>
+					<button class="operator" id="ce">CE</button>
+					<button class="operator" id="%">%</button>
+					<button class="operator" id="/">&#247;</button>
+
+					<!--Row 2 (7 8 9 *)-->
+					<button class="number" id="7">7</button>
+					<button class="number" id="8">8</button>
+					<button class="number" id="9">9</button>
+					<button class="operator" id="*">&times;</button>
+
+					<!--Row 3 (4 5 6 -) -->
+					<button class="number" id="4">4</button>
+					<button class="number" id="5">5</button>
+					<button class="number" id="6">6</button>
+					<button class="operator" id="-">-</button>
+
+					<!--Row 4 (1 2 3 +)-->
+					<button class="number" id="1">1</button>
+					<button class="number" id="2">2</button>
+					<button class="number" id="3">3</button>
+					<button class="operator" id="+">+</button>
+
+					<!--Row 5 (Logo 0 Empty =) -->
+					<div class="logo" id="logo"><img src="images/allylamblogo.png"></div>
+					<button class="number" id="0">0</button>
+					<button class="operator" id="Error"></button><!--error button-->
+					<button class="operator" id="=">=</button>
+				</div>
+			</div>
+		</div>
+		<!--Javascript placed at bottom so code can run from top to bottom first -->
+		<script src="js/script.js"></script>
+	</body>
+</html>

@@ -1,0 +1,180 @@
+/*Main Background Body Shell*/
+body{
+	font-family: 'Open Sans', sans-serif;
+	background-color: black;
+}
+/*Container holding background image*/
+#container{
+	width: 100%;
+	height: 100%;
+	margin: 20px auto;	
+}
+/*Calculator Sizing and position on page*/
+#calculator{
+	width: 320px;
+	height: 430px;
+	background-color: #eaedef;
+	margin: 0 auto;
+	top: 20px;
+	position: relative;
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+/*Top Section holding sells for input*/
+#result{
+	height: 120px;
+}
+/*top padding of main box*/
+#history{
+	text-align: right;
+	height: 20px;
+	margin: 0 20px;
+	padding-top: 20px;
+	font-size: 15px;
+	color:rgb(74, 138, 113);
+}
+/*Box where input is put into*/
+#output{
+	text-align: right;
+	height: 60px;
+	margin: 10px 20px;
+	font-size: 30px;
+}
+
+/*Main Box around buttons*/
+#keyboard{
+	height: 300px;
+	background-color: rgba(110, 199, 165, 0.979);
+}
+/* C, CE and %*/
+.operator, .number, .empty, .logo {
+	width: 60px;
+	height: 45px;
+	margin-left: 16px;
+	margin-top: 12px;
+	float: left;
+	border-radius: 10%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 18px;
+}
+
+/*Main Number Color Background*/
+.number, .empty{
+	background-color: white;
+}
+
+.logo img{
+	width: 100%;
+	padding-bottom: 10px;
+}
+
+/*Color on Numbers*/
+.number, .operator, .empty{
+	cursor: pointer;
+	color: black;
+}
+.operator:active, .number:active, .empty:active{
+	font-size: 13px;
+}
+.operator:focus, .number:focus, .empty:focus{
+	outline: 0;
+}
+.number:hover {
+	border: 2px rgb(74, 138, 113) solid;
+}
+.operator:hover{
+	border: 2px rgb(66, 121, 100) solid;
+}
+.empty:hover {
+	border: 2px rgb(66, 121, 100) solid;
+}
+
+button.close {
+	width: 30px;
+	height: 25px;
+	margin-left: 10px;
+	margin-top: 10px;
+	float: left;
+	border-radius: 10%;
+	border-width: 0;
+	font-weight: bold;
+	font-size: 18px;
+}
+.close a {
+	font: arial;
+	size: 10pt;
+	color: rgb(66, 121, 100);
+	text-decoration: none;
+}
+button.close:hover {
+	font-size: 25px;
+}
+
+#thankYouBox { 
+	height: 100%;
+	background: url(../images/ThankYouImage.png) no-repeat center center; 
+	position: relative;
+	text-align: center;	
+}
+#thankYouBox button {
+	width: 200px;
+	height: 30px;
+	background-color:rgb(66, 121, 100);
+	border: none;
+	position: relative;
+	text-align: center;
+	margin-top: 300px;
+}
+#thankYouBox button:hover{
+	background-color:rgb(44, 85, 69);
+}
+
+
+#thankYouBox button a {
+	color: white;
+	text-decoration: none;
+	font-size: 10pt;
+}
+
+
+/*Independent Button Styles - By Grid location - Top Left to Bottom Right*/
+button:nth-child(1){
+	color: rgb(74, 138, 113);
+}
+button:nth-child(2){
+	color: rgb(74, 138, 113);
+}
+button:nth-child(3){
+	color: rgb(74, 138, 113);
+}
+button:nth-child(4){
+	font-size: 20px;
+	background-color: rgb(74, 138, 113);
+	color: white;
+}
+button:nth-child(8){
+	font-size: 20px;
+	background-color: rgb(74, 138, 113);
+	color: white;
+}
+button:nth-child(12){
+	font-size: 20px;
+	background-color: rgb(74, 138, 113);
+	color: white;
+}
+button:nth-child(16){
+	font-size: 20px;
+	background-color: rgb(74, 138, 113);
+	color: white;
+}
+
+button:nth-child(17){
+	font-size: 20px;
+	background-color: rgba(110, 199, 165, 0.979);
+}
+button:nth-child(20){
+	font-size: 20px;
+	background-color: rgb(74, 138, 113);
+	color: white;
+}
